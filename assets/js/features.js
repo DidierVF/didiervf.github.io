@@ -66,7 +66,8 @@ const observer = new IntersectionObserver(function(entries) {
     });
 }, observerOptions);
 
-document.querySelectorAll('.project-card, .service-card, .skill-card').forEach(el => {
+// Aplicar efectos de entrada a todos los elementos
+document.querySelectorAll('.project-card, .service-card, .skill-card, .timeline-item, .section-title, .section-subtitle, .hero-content, .about-grid, .about-text, .contact-container, .contact-info-section, .contact-form-section, footer').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
     el.style.transition = 'all 0.6s ease';
