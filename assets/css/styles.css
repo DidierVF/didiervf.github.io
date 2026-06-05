@@ -284,7 +284,7 @@ nav a:hover, nav a.active {
     height: clamp(400px, 20vw, 250px);
     border-radius: 50%;
     object-fit: cover;
-    flex-shrink: 0; /*Evita que la imagen se reduzca demasiado en pantallas pequeñas*/
+    flex-shrink: 0;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.5s ease;
 }
@@ -315,8 +315,6 @@ nav a:hover, nav a.active {
     text-align: justify;
     font-size: 1.1rem;
 }
-
-
 
 /* PROYECTOS */
 .projects-grid {
@@ -623,7 +621,7 @@ nav a:hover, nav a.active {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    z-index: 2; /*Asegura que los elementos estén por encima de la línea*/
+    z-index: 2;
 }
 
 .timeline-marker {
@@ -636,7 +634,7 @@ nav a:hover, nav a.active {
     justify-content: center;
     z-index: 10;
     margin-bottom: 2rem;
-    flex-shrink: 0; /*Evita que el marcador se reduzca demasiado en pantallas pequeñas*/
+    flex-shrink: 0;
     position: relative;
 }
 
@@ -755,7 +753,6 @@ nav a:hover, nav a.active {
     transition: all 0.3s ease;
 }
 
-/* Variantes de tamaño para iconos */
 .iconos-pequeño {
     width: clamp(1.5rem, 5vw, 2.5rem);
     height: clamp(1.5rem, 5vw, 2.5rem);
@@ -771,7 +768,6 @@ nav a:hover, nav a.active {
     height: clamp(3rem, 12vw, 6rem);
 }
 
-/* Efectos adicionales para iconos */
 .iconos:hover {
     transform: scale(1.1);
     opacity: 0.8;
