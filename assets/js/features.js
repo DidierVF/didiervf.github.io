@@ -1,4 +1,16 @@
-// Navegación hamburguesa
+const loader = document.getElementById('loader');
+
+function hideLoader() {
+    loader.classList.add('hidden');
+    document.body.classList.remove('loading');
+}
+
+window.addEventListener('load', function () {
+    setTimeout(hideLoader, 1500);
+});
+
+setTimeout(hideLoader, 4000);
+
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('nav-menu');
 const navLinks = document.querySelectorAll('.nav-link');
@@ -16,7 +28,6 @@ navLinks.forEach(link => {
     });
 });
 
-// Scroll suave y actualización de navegación activa
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -30,7 +41,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Actualizar enlace activo al hacer scroll
 window.addEventListener('scroll', () => {
     let current = '';
     const sections = document.querySelectorAll('section');
@@ -51,7 +61,6 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Animación de entrada
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -100px 0px'
@@ -66,7 +75,6 @@ const observer = new IntersectionObserver(function(entries) {
     });
 }, observerOptions);
 
-// Aplicar efectos de entrada a todos los elementos
 document.querySelectorAll('.project-card, .service-card, .skill-card, .timeline-item, .section-title, .section-subtitle, .hero-content, .about-grid, .about-text, .contact-container, .contact-info-section, .contact-form-section, footer').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
