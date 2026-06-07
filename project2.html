@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO — personaliza por proyecto -->
+    <meta name="description" content="Bote a radiocontrol — Didier Vargas Fernández, Ingeniero Mecatrónico.">
+    <meta name="author" content="Didier Vargas Fernández">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.didiervargasf.com/project2.html">
+
+    <title>Didier Vargas | Diseño | Automatización | Control</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/isotipo.png">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="loading">
+    <!-- PANTALLA DE CARGA -->
+    <div id="loader">
+        <svg class="loader-isotipo" viewBox="0 0 46.452805 39.877953" xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(-5.277546,-88.04572)">
+                <g transform="translate(0.48328163,2.6458334)">
+                    <g transform="matrix(1.15341,0,0,1.15341,-86.950893,-14.514249)">
+                        <path style="fill:#00a3ff" d="m 79.542537,86.684376 31.162193,-0.04797 v 27.495704 l -6.68454,7.06685 V 93.335986 l -17.599841,0.04797 z"/>
+                        <path style="fill:#00a3ff" d="m 113.05378,86.624998 h 6.76308 v 18.514532 l -6.75486,6.81105 z"/>
+                        <path style="fill:#02285c" d="m 92.265014,95.969969 h 9.305236 v 9.161341 z"/>
+                        <path style="fill:#004aad" d="m 88.399708,95.930233 13.238372,13.094477 v 9.40117 L 88.447675,105.23546 Z"/>
+                    </g>
+                </g>
+            </g>
+        </svg>
+        <div class="loader-bar-track">
+            <div class="loader-bar-fill"></div>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <div class="logo img">
+                <a href="index.html">
+                    <img src="assets/img/logo-didier.png" alt="logo-didier">
+                </a>
+            </div>
+            <nav id="nav-menu">
+                <a href="index.html#inicio"   class="nav-link">Inicio</a>
+                <a href="index.html#sobre"    class="nav-link">Sobre mí</a>
+                <a href="index.html#proyectos" class="nav-link active">Proyectos</a>
+                <a href="index.html#servicios" class="nav-link">Servicios</a>
+                <a href="index.html#contacto"  class="nav-link">Contacto</a>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO DEL PROYECTO -->
+    <section class="project-hero">
+        <div class="project-hero-inner">
+
+            <!-- CATEGORÍA — ej: "Diseño CAD" / "Automatización" / "Robótica" -->
+            <span class="project-category">Robótica</span>
+
+            <!-- TÍTULO PRINCIPAL -->
+            <h1>Bote <span>RC</span></h1>
+
+            <!-- SUBTÍTULO DE UNA LÍNEA 
+            <p class="project-hero-subtitle">
+                [Descripción breve en una o dos líneas que resume el objetivo del proyecto.]
+            </p>-->
+
+            <!-- METADATOS -->
+            <div class="project-meta">
+                <div class="project-meta-item">
+                    <span class="label">Institución:</span>
+                    <span>Universidad Autónoma de Occidente</span>
+                </div>
+                <div class="project-meta-item">
+                    <span class="label">Período:</span>
+                    <span>10/2024</span>
+                </div>
+                <div class="project-meta-item">
+                    <span class="label">Rol:</span>
+                    <span>Co-desarrollador</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CUERPO DEL PROYECTO -->
+    <div class="projects-body">
+        <div class="project-container">
+
+            <!-- BOTÓN VOLVER -->
+            <a href="index.html#proyectos" class="project-back">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 5l-7 7 7 7"/>
+                </svg>
+                Volver a Proyectos
+            </a>
+
+            <!-- SECCIÓN 1: DESCRIPCIÓN GENERAL -->
+            <div class="project-section">
+                <div class="project-section-label">Descripción</div>
+                <h2>¿En qué consiste el proyecto?</h2>
+                <p>
+                    Este proyecto nació de una decisión tan retadora como motivadora: inscribirse al VIII Concurso Internacional de Robótica Electrobot, organizado por la Universidad Santiago de Cali, con apenas un mes de anticipación. Sin documentación previa, sin un problema industrial que resolver y sin más recurso que la determinación personal, se asumió el reto de diseñar, construir y competir con un bote a radiocontrol completamente funcional desde cero. La competencia reunía múltiples modalidades — minisumos, laberintos, drones y botes RC — y exigía cumplir requerimientos técnicos estrictos en cuanto a dimensiones, materiales y funcionamiento. Más allá del resultado, este proyecto es un testimonio de resiliencia, capacidad de ejecución bajo presión y pasión genuina por la ingeniería mecatrónica aplicada.
+                </p>
+                <p>
+                    El diseño del casco fue desarrollado íntegramente en SolidWorks y fabricado mediante manufactura aditiva FDM en material PETG, seleccionado por su resistencia mecánica y compatibilidad con sellados impermeables logrados con o-rings y recubrimientos especializados. La propulsión se resolvió con motores brushless RS2205 controlados por drivers ESC 30A, alimentados por baterías de litio 18650, logrando una relación potencia-peso óptima para las pruebas de velocidad y maniobrabilidad. El sistema de control se implementó con Arduino UNO programado en C++, recibiendo señales del receptor Turnigy IA8 para traducir los comandos del piloto en respuestas precisas del bote. Además de liderar el co-desarrollo técnico del proyecto, también se asumió el rol de piloto durante la competencia, enfrentando dos rondas de prueba — velocidad y maniobrabilidad — frente a los demás equipos participantes.
+                </p>
+            </div>
+
+            <!-- HIGHLIGHTS / PUNTOS CLAVE -->
+            <div class="project-highlights">
+                <div class="highlight-card">
+                    <h4>Objetivo</h4>
+                    <p>Diseñar y construir un bote RC competitivo en menos de un mes, cumpliendo los requerimientos técnicos del VIII Concurso Internacional de Robótica Electrobot USC e integrando diseño CAD, manufactura aditiva y electrónica embebida.</p>
+                </div>
+                <div class="highlight-card">
+                    <h4>Resultado</h4>
+                    <p>Primer lugar en la competencia, superando en velocidad y maniobrabilidad al único equipo rival que logró clasificar. El bote operó sin fallas técnicas durante toda la jornada, validando la robustez del diseño y el sellado impermeable en condiciones reales de competencia.</p>
+                </div>
+                <div class="highlight-card">
+                    <h4>Impacto</h4>
+                    <p>Demostración práctica de que es posible ejecutar un proyecto mecatrónico complejo, desde el diseño hasta la competencia, con recursos limitados y en tiempo récord, fortaleciendo habilidades de gestión ágil, toma de decisiones técnicas bajo presión y liderazgo en entornos de alta exigencia.</p>
+                </div>
+            </div>
+
+            <hr class="project-divider">
+
+            <!-- CARRUSEL DE IMÁGENES -->
+            <div class="project-carousel-wrap">
+                <div class="carousel-container">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/img/bote.png" alt="vista frontal del maniquí">
+                            <p class="carousel-caption">Bote en competencia</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/bote1.png" alt="Sistema de actuadores del maniquí">
+                            <p class="carousel-caption">Grupos participantes del evento</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/bote2.png" alt="Estructura interna del maniquí">
+                            <p class="carousel-caption">Grupo ganador del 1er Lugar</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/bote3.png" alt="Estructura interna del maniquí">
+                            <p class="carousel-caption">Bote puesto a prueba</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Controles del carrusel -->
+                    <button class="carousel-control carousel-prev" aria-label="Imagen anterior">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 18l-6-6 6-6"/>
+                        </svg>
+                    </button>
+                    <button class="carousel-control carousel-next" aria-label="Siguiente imagen">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 18l6-6-6-6"/>
+                        </svg>
+                    </button>
+
+                    <!-- Indicadores -->
+                    <div class="carousel-indicators">
+                        <button class="indicator active" data-slide="0" aria-label="Imagen 1"></button>
+                        <button class="indicator" data-slide="1" aria-label="Imagen 2"></button>
+                        <button class="indicator" data-slide="2" aria-label="Imagen 3"></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECCIÓN 2: DESARROLLO 
+            <div class="project-section">
+                <div class="project-section-label">Desarrollo</div>
+                <h2>Proceso y metodología</h2>
+                <p>
+                    [Párrafo explicando cómo se planificó y ejecutó el proyecto: etapas, herramientas de diseño, programación, fabricación o gestión utilizadas.]
+                </p>
+                <p>
+                    [Párrafo sobre los desafíos encontrados y cómo se resolvieron técnicamente.]
+                </p>
+            </div>-->
+
+            <!-- TECNOLOGÍAS USADAS -->
+            <div class="project-section">
+                <div class="project-section-label">Tecnologías</div>
+                <h2>Herramientas y componentes</h2>
+                <div class="tech-list">
+                    <!-- Agrega o elimina tags según el proyecto -->
+                    <span class="tech-tag">SolidWorks</span>
+                    <span class="tech-tag">Turnigy IA8</span>
+                    <span class="tech-tag">Brushless RS2205</span>
+                    <span class="tech-tag">ESC 30A</span>
+                    <span class="tech-tag">Li-ion 18650</span>
+                    <span class="tech-tag">Arduino UNO</span>
+                    <span class="tech-tag">C++</span>
+                    <span class="tech-tag">Impresión 3D</span>
+                </div>
+            </div>
+
+            <!-- NAVEGACIÓN ENTRE PROYECTOS -->
+            <div class="project-nav">
+                <!--
+                    Proyecto anterior: cambia el href y el nombre.
+                    Si es el primer proyecto, elimina este bloque.
+                -->
+                <a href="project1.html">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 5l-7 7 7 7"/>
+                    </svg>
+                    <div>
+                        <span class="nav-label">Proyecto anterior</span>
+                        AquaGuard
+                    </div>
+                </a>
+
+                <!--
+                    Proyecto siguiente: cambia el href y el nombre.
+                    Si es el último proyecto, elimina este bloque.
+                -->
+                <a href="project3.html">
+                    <div style="text-align:right">
+                        <span class="nav-label">Siguiente proyecto</span>
+                        Manifem
+                    </div>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/didier-vargas-fernandez-217310160">LinkedIn</a>
+                <a href="mailto:didier.vargasf@gmail.com">Correo</a>
+                <a href="index.html">Inicio</a>
+            </div>
+            <p>© 2026 Didier Vargas Fernández. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/js/features.js"></script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO — personaliza por proyecto -->
+    <meta name="description" content="Maniquí de costura adaptable — Didier Vargas Fernández, Ingeniero Mecatrónico.">
+    <meta name="author" content="Didier Vargas Fernández">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.didiervargasf.com/project3.html">
+
+    <title>Didier Vargas | Diseño | Automatización | Control</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/isotipo.png">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="loading">
+    <!-- PANTALLA DE CARGA -->
+    <div id="loader">
+        <svg class="loader-isotipo" viewBox="0 0 46.452805 39.877953" xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(-5.277546,-88.04572)">
+                <g transform="translate(0.48328163,2.6458334)">
+                    <g transform="matrix(1.15341,0,0,1.15341,-86.950893,-14.514249)">
+                        <path style="fill:#00a3ff" d="m 79.542537,86.684376 31.162193,-0.04797 v 27.495704 l -6.68454,7.06685 V 93.335986 l -17.599841,0.04797 z"/>
+                        <path style="fill:#00a3ff" d="m 113.05378,86.624998 h 6.76308 v 18.514532 l -6.75486,6.81105 z"/>
+                        <path style="fill:#02285c" d="m 92.265014,95.969969 h 9.305236 v 9.161341 z"/>
+                        <path style="fill:#004aad" d="m 88.399708,95.930233 13.238372,13.094477 v 9.40117 L 88.447675,105.23546 Z"/>
+                    </g>
+                </g>
+            </g>
+        </svg>
+        <div class="loader-bar-track">
+            <div class="loader-bar-fill"></div>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <div class="logo img">
+                <a href="index.html">
+                    <img src="assets/img/logo-didier.png" alt="logo-didier">
+                </a>
+            </div>
+            <nav id="nav-menu">
+                <a href="index.html#inicio"   class="nav-link">Inicio</a>
+                <a href="index.html#sobre"    class="nav-link">Sobre mí</a>
+                <a href="index.html#proyectos" class="nav-link active">Proyectos</a>
+                <a href="index.html#servicios" class="nav-link">Servicios</a>
+                <a href="index.html#contacto"  class="nav-link">Contacto</a>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO DEL PROYECTO -->
+    <section class="project-hero">
+        <div class="project-hero-inner">
+            <!-- CATEGORÍA — ej: "Diseño CAD" / "Automatización" / "Robótica" -->
+            <span class="project-category">Automatización</span>
+
+            <!-- TÍTULO PRINCIPAL -->
+            <h1><span>Manifem</span> Maniquí de costura adaptable</h1>
+
+            <!-- SUBTÍTULO DE UNA LÍNEA -->
+            <p class="project-hero-subtitle">
+                
+            </p>
+
+            <!-- METADATOS -->
+            <div class="project-meta">
+                <div class="project-meta-item">
+                    <span class="label">Institución:</span>
+                    <span>Fundación Centro Colombiano de Estudios Profesionales - FCECEP</span>
+                </div>
+                <div class="project-meta-item">
+                    <span class="label">Período:</span>
+                    <span>06/2022</span>
+                </div>
+                <div class="project-meta-item">
+                    <span class="label">Rol:</span>
+                    <span>Co-desarrollador</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CUERPO DEL PROYECTO -->
+    <div class="projects-body">
+        <div class="project-container">
+
+            <!-- BOTÓN VOLVER -->
+            <a href="index.html#proyectos" class="project-back">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 5l-7 7 7 7"/>
+                </svg>
+                Volver a Proyectos
+            </a>
+
+            <!-- SECCIÓN 1: DESCRIPCIÓN GENERAL -->
+            <div class="project-section">
+                <div class="project-section-label">Descripción</div>
+                <h2>¿En qué consiste el proyecto?</h2>
+                <p>
+                    La industria de la moda enfrenta un problema estructural: la estandarización de tallas no corresponde a la diversidad antropométrica real de las personas, especialmente en el contexto colombiano. Un censo local realizado con 58 mujeres evidenció que el 60% ha tenido que acudir a un modista para ajustar prendas superiores compradas, lo que representa un costo adicional de tiempo y dinero para el consumidor. Manifem nació como respuesta a esta problemática, desarrollado en la Fundación Centro Colombiano de Estudios Profesionales FCECEP en Cali, con el propósito de ofrecer a diseñadores, modistas y sastres una herramienta electromecánica capaz de reproducir las medidas corporales femeninas entre las tallas S y M, tomando como referencia la antropometría específica de la mujer caleña.
+                </p>
+                <p>
+                    El sistema integra un microcontrolador ATmega328P, 14 servomotores MG90S, un módulo de comunicación Bluetooth HC-05 y un driver PWM PCA9685, todos montados sobre una PCB que centraliza el procesamiento y control de los actuadores. El ajuste físico del maniquí se logra mediante un mecanismo de piñón-cremallera diseñado en SolidWorks e impreso en 3D con TPU y PETG, que convierte el movimiento rotacional de los servomotores en expansión o contracción de las distintas secciones del cuerpo. La interacción con el usuario ocurre a través de una interfaz gráfica en tablet que envía por Bluetooth los contornos de cuello, busto, cintura y cadera, logrando una reproducción de medidas con márgenes de error inferiores a 3mm respecto a los promedios antropométricos de referencia. Como trabajo a futuro se plantea ampliar el rango de tallas con servomotores de mayor torque, mejorar la estabilidad del pie de apoyo y fortalecer la conectividad inalámbrica entre la tablet y el hardware interno.
+                </p>
+            </div>
+
+            <!-- HIGHLIGHTS / PUNTOS CLAVE -->
+            <div class="project-highlights">
+                <div class="highlight-card">
+                    <h4>Objetivo</h4>
+                    <p>Implementar un maniquí electromecánico adaptable que reproduzca las medidas corporales femeninas entre tallas S y M, basado en la antropometría de la mujer caleña.</p>
+                </div>
+                <div class="highlight-card">
+                    <h4>Resultado</h4>
+                    <p>Prototipo funcional validado con márgenes de error menores a 3mm, con un consumo energético equivalente al de un bombillo LED de 36 vatios (aproximadamente $6.551 COP mensuales a la fecha).</p>
+                </div>
+                <div class="highlight-card">
+                    <h4>Impacto</h4>
+                    <p>Herramienta innovadora para el sector de la moda en Cali que reduce la dependencia de ajustes manuales por modista, democratizando el acceso a prendas bien talladas para confeccionistas independientes y pequeños talleres.</p>
+                </div>
+            </div>
+
+            <hr class="project-divider">
+
+            <!-- CARRUSEL DE IMÁGENES -->
+            <div class="project-carousel-wrap">
+                <div class="carousel-container">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/img/maniqui.png" alt="vista frontal del maniquí">
+                            <p class="carousel-caption">Vista frontal del maniquí adaptable</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/maniqui1.png" alt="Sistema de actuadores del maniquí">
+                            <p class="carousel-caption">Sistema de servomotores y mecanismo de ajuste</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/maniqui2.png" alt="Estructura interna del maniquí">
+                            <p class="carousel-caption">Estructura interna del maniquí</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Controles del carrusel -->
+                    <button class="carousel-control carousel-prev" aria-label="Imagen anterior">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 18l-6-6 6-6"/>
+                        </svg>
+                    </button>
+                    <button class="carousel-control carousel-next" aria-label="Siguiente imagen">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 18l6-6-6-6"/>
+                        </svg>
+                    </button>
+
+                    <!-- Indicadores -->
+                    <div class="carousel-indicators">
+                        <button class="indicator active" data-slide="0" aria-label="Imagen 1"></button>
+                        <button class="indicator" data-slide="1" aria-label="Imagen 2"></button>
+                        <button class="indicator" data-slide="2" aria-label="Imagen 3"></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECCIÓN 2: DESARROLLO 
+            <div class="project-section">
+                <div class="project-section-label">Desarrollo</div>
+                <h2>Proceso y metodología</h2>
+                <p>
+                    [Párrafo explicando cómo se planificó y ejecutó el proyecto: etapas, herramientas de diseño, programación, fabricación o gestión utilizadas.]
+                </p>
+                <p>
+                    [Párrafo sobre los desafíos encontrados y cómo se resolvieron técnicamente.]
+                </p>
+            </div>-->
+
+            <!-- TECNOLOGÍAS USADAS -->
+            <div class="project-section">
+                <div class="project-section-label">Tecnologías</div>
+                <h2>Herramientas y componentes</h2>
+                <div class="tech-list">
+                    <!-- Agrega o elimina tags según el proyecto -->
+                    <span class="tech-tag">SolidWorks</span>
+                    <span class="tech-tag">OnShape</span>
+                    <span class="tech-tag">ATmega328P</span>
+                    <span class="tech-tag">PCA9685</span>
+                    <span class="tech-tag">HC-05</span>
+                    <span class="tech-tag">Servomotores SG90</span>
+                    <span class="tech-tag">Impresión 3D</span>
+                </div>
+            </div>
+
+            <!-- NAVEGACIÓN ENTRE PROYECTOS -->
+            <div class="project-nav">
+                <!--
+                    Proyecto anterior: cambia el href y el nombre.
+                    Si es el primer proyecto, elimina este bloque.-->
+                
+                <a href="project2.html">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 5l-7 7 7 7"/>
+                    </svg>
+                    <div>
+                        <span class="nav-label">Proyecto anterior</span>
+                        Bote RC
+                    </div>
+                </a>
+
+                <!--
+                    Proyecto siguiente: cambia el href y el nombre.
+                    Si es el último proyecto, elimina este bloque.
+                
+                <a href="project3.html">
+                    <div style="text-align:right">
+                        <span class="nav-label">Siguiente proyecto</span>
+                        [Nombre proyecto siguiente]
+                    </div>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>-->
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/didier-vargas-fernandez-217310160">LinkedIn</a>
+                <a href="mailto:didier.vargasf@gmail.com">Correo</a>
+                <a href="index.html">Inicio</a>
+            </div>
+            <p>© 2026 Didier Vargas Fernández. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/js/features.js"></script>
+</body>
+</html>
